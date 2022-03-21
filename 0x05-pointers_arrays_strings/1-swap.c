@@ -4,7 +4,7 @@
 *This function is to swap value to values
 */
 
-void swap (int *n, int *m);
+void swap_int(int *n, int *m);
 
 int main(void){
 
