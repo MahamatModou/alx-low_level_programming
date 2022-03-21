@@ -1,28 +1,16 @@
-#include <stdio.h>
-
+#include "main.h"
 /**
-*This function is to swap value to values
-*/
+ *swap_int - swap value of two ints.
+ *@a: pointer to one int.
+ *@b: pointer to second int.
+ *
+ *Return: void.
+ */
+void swap_int(int *a, int *b)
+{
+	int c;
 
-void swap_int(int *n, int *m);
-
-int main(void){
-
-int n = 98;
-int m = 42;
-
-printf("value of a is %d, value of b is %d\n", n, m);
-
-swap(&n, &m);
-
-printf("value of a is %d, value of b is %d\n", n, m);
-
-return 0;
-}
-
-void swap_int(int *a, int *b){
-int temp;
-temp = *a;
-*a = *b;
-*b = temp;
+	c = *a;
+	*a = *b;
+	*b = c;
 }

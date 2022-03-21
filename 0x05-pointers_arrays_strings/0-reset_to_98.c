@@ -1,22 +1,11 @@
-#include <stdio.h>
-
-void reset_to_98(int n)
+#include "main.h"
+/**
+ *reset_to_98 - resets value in address referenced by pointer.
+ *@n: pointer.
+ *
+ *Return: void.
+ */
+void reset_to_98(int *n)
 {
-
-	int m*;
-	m = &n;
-
-printf("address of variable n : %x\n", n);
-
-printf("address stored in m : %x\n", &n);
-
-printf("value of *n : %x\n", n);
-
-retrun(0);
-}
-
-int main (void) {
-	
-	reset_to_98(98);
-	return(0);
+	*n = 98;
 }
